@@ -51,7 +51,7 @@ except URLError as e:
     streamlit.error()
 
 streamlit.header("The fruit load list contains:")
-if streamlit.button('Get fruit load list')
+if streamlit.button('Get fruit load list'):
     my_data_rows = get_fruit_load_list()
     streamlit.dataframe(my_data_rows)
 
