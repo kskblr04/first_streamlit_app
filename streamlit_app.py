@@ -57,6 +57,6 @@ if not fruit_add:
     streamlit.error("Please add a fruit")
 else:     
     streamlit.write('Thanks for adding ', fruit_add)
-    my_cur.execute('insert into fruit_load_list values')
+    my_cur.execute('insert into fruit_load_list values (' + fruit_add + ')')
 
 
